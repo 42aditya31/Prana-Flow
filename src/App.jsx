@@ -10,7 +10,8 @@ import CallToAction from './components/CallToAction';
 import Footer from './components/Footer';
 import LoginPage from './components/LoginPage';
 import SignUpPage from './components/SignUpPage';
-
+import AboutPage from './components/AboutPage'; 
+import GetInvolvedPage from './components/GetInvolvedPage'; 
 function App() {
   return (
     <Router>
@@ -32,6 +33,28 @@ function App() {
           }
         />
         
+        {/* About Page */}
+        <Route
+          path="/about"
+          element={
+            <>
+              <AboutPage />
+              <Footer />
+            </>
+          }
+        />
+
+        {/* Get Involved Page */}
+        <Route
+          path="/get-involved"
+          element={
+            <>
+              <GetInvolvedPage />
+              <Footer />
+            </>
+          }
+        />
+
         {/* Login Page */}
         <Route path="/login" element={<LoginPage />} />
         
