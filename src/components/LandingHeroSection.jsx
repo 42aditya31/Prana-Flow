@@ -42,7 +42,7 @@ const LandingHeroSection = () => {
             </li>
             <li>
               <a
-                href="#login"
+                href="/login"
                 className="bg-secondary text-primary px-4 py-2 rounded-lg hover:bg-white hover:text-primary border border-secondary transition duration-300 ease-in-out font-roboto font-medium"
               >
                 Log In
@@ -50,7 +50,7 @@ const LandingHeroSection = () => {
             </li>
             <li>
               <a
-                href="#signup"
+                href="/signup"
                 className="bg-transparent text-secondary px-4 py-2 rounded-lg border border-secondary hover:bg-secondary hover:text-white transition duration-300 ease-in-out font-roboto font-medium"
               >
                 Sign Up
@@ -106,7 +106,7 @@ const LandingHeroSection = () => {
               </li>
               <li>
                 <a
-                  href="#login"
+                  href="/login"
                   className="block bg-secondary text-primary px-4 py-2 rounded-lg hover:bg-white hover:text-primary border border-secondary transition duration-300 ease-in-out font-roboto font-medium"
                 >
                   Log In
@@ -114,7 +114,7 @@ const LandingHeroSection = () => {
               </li>
               <li>
                 <a
-                  href="#signup"
+                  href="/signup"
                   className="block bg-transparent text-secondary px-4 py-2 rounded-lg border border-secondary hover:bg-secondary hover:text-white transition duration-300 ease-in-out font-roboto font-medium"
                 >
                   Sign Up
