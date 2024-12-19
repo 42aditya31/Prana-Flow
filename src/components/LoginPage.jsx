@@ -32,7 +32,7 @@ const LoginPage = () => {
             />
           </div>
           <button
-{/*             type="submit" */}
+            type="submit"
             className="w-full bg-[#073B4C] text-[#FFD166] py-2 rounded-lg hover:bg-[#FFD166] hover:text-[#073B4C] transition duration-300">
             Log In
           </button>
