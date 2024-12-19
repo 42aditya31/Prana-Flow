@@ -42,7 +42,7 @@ const LandingHeroSection = () => {
             </li>
             <li>
               <a
-                href="/login"
+                href="https://prana-flow.vercel.app/login"
                 className="bg-secondary text-primary px-4 py-2 rounded-lg hover:bg-white hover:text-primary border border-secondary transition duration-300 ease-in-out font-roboto font-medium"
               >
                 Log In
