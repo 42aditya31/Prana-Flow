@@ -68,8 +68,8 @@ const FeatureBenefits = () => {
         <button
           className={`px-8 py-3 font-semibold border transition-all duration-300 ${
             toggleActive === "FirstHalf"
-              ? "bg-blue-500 text-white border-blue-500"
-              : "bg-white text-gray-700 border-gray-300 hover:bg-gray-100"
+              ? "bg-[#118AB2] text-white border-blue-500"
+              : "bg-[#073B4C] text-white border-gray-300 hover:bg-gray-100"
           } rounded-l-full`}
           onClick={() => setToggleActive("FirstHalf")}
         >
@@ -78,12 +78,12 @@ const FeatureBenefits = () => {
         <button
           className={`px-8 py-3 font-semibold border transition-all duration-300 ${
             toggleActive === "SecondHalf"
-              ? "bg-blue-500 text-white border-blue-500"
-              : "bg-white text-gray-700 border-gray-300 hover:bg-gray-100"
+              ? "bg-[#118AB2] text-white border-blue-500"
+              : "bg-[#073B4C] text-white border-gray-300 hover:bg-gray-100"
           } rounded-r-full`}
           onClick={() => setToggleActive("SecondHalf")}
         >
-        Benifits
+        Benefits
         </button>
       </div>
 
