@@ -42,16 +42,16 @@ const LandingHeroSection = () => {
             </li>
             <li>
               <a
-                href="#login"
-                className="bg-[#FFD166] text-[#073B4C] px-4 py-2 rounded-lg hover:bg-[#073B4C] hover:text-white border border-secondary transition duration-300 ease-in-out font-roboto font-medium"
+                href="/login"
+                className="bg-secondary text-primary px-4 py-2 rounded-lg hover:bg-white hover:text-primary border border-secondary transition duration-300 ease-in-out font-roboto font-medium"
               >
                 Log In
               </a>
             </li>
             <li>
               <a
-                href="#signup"
-                className="bg-[#FFD166] text-[#073B4C] px-4 py-2 rounded-lg border border-secondary hover:bg-[#073B4C] hover:text-white transition duration-300 ease-in-out font-roboto font-medium"
+                href="/signup"
+                className="bg-transparent text-secondary px-4 py-2 rounded-lg border border-secondary hover:bg-secondary hover:text-white transition duration-300 ease-in-out font-roboto font-medium"
               >
                 Sign Up
               </a>
@@ -106,16 +106,16 @@ const LandingHeroSection = () => {
               </li>
               <li>
                 <a
-                  href="#login"
-                  className="block bg-[#FFD166] text-[#073B4C] px-4 py-2 my-4 rounded-lg hover:bg-[#073B4C] hover:text-white border border-secondary transition duration-300 ease-in-out font-roboto font-medium"
+                  href="/login"
+                  className="block bg-secondary text-primary px-4 py-2 rounded-lg hover:bg-white hover:text-primary border border-secondary transition duration-300 ease-in-out font-roboto font-medium"
                 >
                   Log In
                 </a>
               </li>
               <li>
                 <a
-                  href="#signup"
-                  className="block bg-[#FFD166] text-[#073B4C] px-4 py-2 rounded-lg border border-secondary hover:bg-[#073B4C] hover:text-white transition duration-300 ease-in-out font-roboto font-medium"
+                  href="/signup"
+                  className="block bg-transparent text-secondary px-4 py-2 rounded-lg border border-secondary hover:bg-secondary hover:text-white transition duration-300 ease-in-out font-roboto font-medium"
                 >
                   Sign Up
                 </a>

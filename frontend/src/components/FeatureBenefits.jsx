@@ -16,9 +16,9 @@ const FeatureBenefits = () => {
     },
     {
       id: 3,
-      image: "https://via.placeholder.com/300",
-      head: "   Gamified Progress Tracking ",
-      p: "  Boost your engagement with habit streaks, levels, and rewards. Our gamification tools turn your journey into a fun, fulfilling experience.",
+      image: 'https://via.placeholder.com/300',
+      head: "Gamified Progress Tracking ",
+      p: "Boost your engagement with habit streaks, levels, and rewards. Our gamification tools turn your journey into a fun, fulfilling experience.",
     },
     {
       id: 4,
@@ -66,24 +66,22 @@ const FeatureBenefits = () => {
       {/* Toggle Buttons */}
       <div className="flex justify-center mb-8">
         <button
-          className={`px-8 py-3 font-semibold border transition-all duration-300 ${
-            toggleActive === "FirstHalf"
+          className={`px-8 py-3 font-semibold border transition-all duration-300 ${toggleActive === "FirstHalf"
               ? "bg-[#118AB2] text-white border-blue-500"
               : "bg-[#073B4C] text-white border-gray-300 hover:bg-gray-100"
-          } rounded-l-full`}
+            } rounded-l-full`}
           onClick={() => setToggleActive("FirstHalf")}
         >
-        Features
+          Features
         </button>
         <button
-          className={`px-8 py-3 font-semibold border transition-all duration-300 ${
-            toggleActive === "SecondHalf"
+          className={`px-8 py-3 font-semibold border transition-all duration-300 ${toggleActive === "SecondHalf"
               ? "bg-[#118AB2] text-white border-blue-500"
               : "bg-[#073B4C] text-white border-gray-300 hover:bg-gray-100"
-          } rounded-r-full`}
+            } rounded-r-full`}
           onClick={() => setToggleActive("SecondHalf")}
         >
-        Benefits
+          Benefits
         </button>
       </div>
 
@@ -93,9 +91,8 @@ const FeatureBenefits = () => {
           displayData.map((item, index) => (
             <div
               key={item.id}
-              className={`flex flex-col ${
-                index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-              } items-center bg-white rounded-lg overflow-hidden`}
+              className={`flex flex-col ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                } items-center bg-white rounded-lg overflow-hidden`}
             >
               {/* Image */}
               <img
