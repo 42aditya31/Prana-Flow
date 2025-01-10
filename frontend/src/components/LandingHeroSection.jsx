@@ -26,7 +26,7 @@ const LandingHeroSection = () => {
           <ul className="hidden md:flex space-x-8 items-center">
             <li>
               <a
-                href="#about"
+                href="/about"
                 className="hover:text-white transition duration-300 ease-in-out text-lg"
               >
                 About
@@ -34,10 +34,10 @@ const LandingHeroSection = () => {
             </li>
             <li>
               <a
-                href="#features"
+                href="/get-involved"
                 className="hover:text-white transition duration-300 ease-in-out text-lg"
               >
-                Features
+              Get Involved
               </a>
             </li>
             <li>
@@ -90,7 +90,7 @@ const LandingHeroSection = () => {
             <ul>
               <li>
                 <a
-                  href="#about"
+                  href="/about"
                   className="block hover:text-white my-4 transition duration-300 ease-in-out text-lg"
                 >
                   About
@@ -98,7 +98,7 @@ const LandingHeroSection = () => {
               </li>
               <li>
                 <a
-                  href="#features"
+                  href="/get-involved"
                   className="block hover:text-white transition duration-300 ease-in-out text-lg"
                 >
                   Features
@@ -133,7 +133,7 @@ const LandingHeroSection = () => {
             <p className="mt-4 font-agrandir lg:text-2xl sm:text-lg md:text-xl text-gray-800">
               Is Your Life Feeling Chaotic and Out of Balance?
             </p>
-            <h1 className="font-agrandir lg:text-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl  leading-tight text-black">
+            <h1 className="font-agrandir lg:text-bold  sm:text-4xl md:text-5xl lg:text-6xl  leading-tight text-black">
               Ready to Transform Your
             </h1>
             <div className="flex flex-col sm:flex-row items-start sm:items-center">

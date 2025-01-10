@@ -10,7 +10,10 @@ import CallToAction from './components/CallToAction';
 import Footer from './components/Footer';
 import LoginPage from './components/LoginPage';
 import SignUpPage from './components/SignUpPage';
-
+import AboutPage from './components/AboutPage'; 
+import GetInvolvedPage from './components/GetInvolvedPage'; 
+// import Dashboard from './components/Dashboard';
+import HabitTracker from './components/HabitTracker';
 function App() {
   return (
     <Router>
@@ -21,6 +24,8 @@ function App() {
           element={
             <>
               <LandingHeroSection />
+              {/* <Dashboard/> */}
+              <HabitTracker/>
               {/* Uncomment the following sections if needed */}
               {/* <LandingFeature/> */}
               {/* <LandingBenefits/> */}
@@ -32,6 +37,28 @@ function App() {
           }
         />
         
+        {/* About Page */}
+        <Route
+          path="/about"
+          element={
+            <>
+              <AboutPage />
+              <Footer />
+            </>
+          }
+        />
+
+        {/* Get Involved Page */}
+        <Route
+          path="/get-involved"
+          element={
+            <>
+              <GetInvolvedPage />
+              <Footer />
+            </>
+          }
+        />
+
         {/* Login Page */}
         <Route path="/login" element={<LoginPage />} />
         
