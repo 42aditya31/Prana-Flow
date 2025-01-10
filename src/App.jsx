@@ -12,6 +12,8 @@ import LoginPage from './components/LoginPage';
 import SignUpPage from './components/SignUpPage';
 import AboutPage from './components/AboutPage'; 
 import GetInvolvedPage from './components/GetInvolvedPage'; 
+import Dashboard from './components/Dashboard';
+import HabitTracker from './components/HabitTracker';
 function App() {
   return (
     <Router>
@@ -22,6 +24,8 @@ function App() {
           element={
             <>
               <LandingHeroSection />
+              {/* <Dashboard/> */}
+              <HabitTracker/>
               {/* Uncomment the following sections if needed */}
               {/* <LandingFeature/> */}
               {/* <LandingBenefits/> */}
