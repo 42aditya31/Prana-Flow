@@ -100,7 +100,7 @@ app.post("/login", async (req, res) => {
     if (email === DBuser && bcrypt.compareSync(password, databasePassword.password)) {
       res.status(200).json({ message: "Login successful!" });
     } else {
-      res.status(401).json({ error: "Invalid email or password!" });
+      res.status(401).json({ error: "Invalid email or password!" })
     }
   }
 

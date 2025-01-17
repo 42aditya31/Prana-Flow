@@ -17,7 +17,7 @@ const LandingHeroSection = () => {
         {/* Logo */}
         <div className="flex items-center space-x-2">
           <h1 className="text-2xl font-bebas hover:scale-110 transform transition duration-300">
-            Bhrahma Niti&reg;
+          Prana Flow&reg;
           </h1>
         </div>
 

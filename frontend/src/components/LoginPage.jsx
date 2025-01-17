@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import Dashboard from "./Dashboard";
 
 const LoginPage = () => {
   const [formData, setFormData] = useState({
@@ -34,7 +35,7 @@ const LoginPage = () => {
         setMessage("Login successful!");
         // Redirect to another page or perform other actions here
         setTimeout(() => {
-          navigate("http://localhost:5173/"); // Redirect to the dashboard page
+          navigate("/dashboard"); // Redirect to the dashboard page
         }, 1000); // Delay for user feedback
       } else {
         setMessage(data.error || "Something went wrong!");
