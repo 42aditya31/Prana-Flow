@@ -9,10 +9,7 @@ const port = 3000;
 const mongoose = require("mongoose");
 const User = require("./models/User");
 
-
-// password encryption
-// const bcrypt = require("bcrypt");
-// const saltRounds = 10;
+const bcrypt = require('bcrypt');
 
 
 // Use CORS middleware
@@ -36,24 +33,10 @@ app.post("/signup", async (req, res) => {
 
   const { name, email, password } = req.body;
 
-  const bcrypt = require('bcrypt');
-  // const saltRounds = 5;
-
-
-  // bcrypt.hash(password, saltRounds, (err, hash) => {
-  //   if (err) throw err;
-  //   hashPassword = hash
-  // });
-
-
-
   try {
-    const hashedPassword = await bcrypt.hash(password, 10);
-    console.log(hashedPassword)
+    const hashedPassword = await bcrypt.hash(password, 10); // hashing the password
 
-
-
-    const newUser = new User({ name, email, password });
+    const newUser = new User({ name, email, password: hashedPassword });
 
     await newUser.save()
     res.status(201).json({ message: "User saved successfully!", user: newUser });
@@ -64,28 +47,66 @@ app.post("/signup", async (req, res) => {
 
 })
 
-const fetchUser = async () => {
+
+// fetching the data from database
+const totalCount = async () => {
+  try {
+    const totalCount = await User.countDocuments();
+    return totalCount;
+  } catch (err) {
+    console.error("Error counting total documents in database!: ", err)
+  }
+}
+
+const fetchUser = async (doc_num) => {
   try {
     const users = await User.find(); // Fetch all users
-    console.log('Users:', users);
+    return (users[doc_num].email);
   } catch (err) {
     console.error('Error fetching users:', err);
   }
 }
 
-// fetchUser()
+const findUser = async (email) => {
+
+  try {
+    const count = await totalCount()
+
+    for (let i = 0; i < count; i++) {
+      if (email == await fetchUser(i)) {
+        return email
+      }
+    }
+    return 1;
+  } catch (err) {
+    console.error("Getting an error: ", err)
+  }
+}
+
 
 // Login route
-app.post("/login", (req, res) => {
+app.post("/login", async (req, res) => {
   const { email, password } = req.body;
 
-  // Sample validation (replace with actual user validation)
-  if (email === "test@example.com" && password === "password123") {
-    res.status(200).json({ message: "Login successful!" });
+  const DBuser = await findUser(email);
+  const databasePassword = await User.findOne({ email: DBuser }, 'password');
+
+  if (DBuser == 1) {
+    console.log("Please enter a valid email id")
+    res.status(401).json({ error: "Invalid email" });
   } else {
-    res.status(401).json({ error: "Invalid email or password!" });
+    console.log(DBuser)
+
+    if (email === DBuser && bcrypt.compareSync(password, databasePassword.password)) {
+      res.status(200).json({ message: "Login successful!" });
+    } else {
+      res.status(401).json({ error: "Invalid email or password!" });
+    }
   }
+
+  
 })
+
 
 // Start the server
 app.listen(port, () => {

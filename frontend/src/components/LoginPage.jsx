@@ -92,11 +92,17 @@ const LoginPage = () => {
           <p className="text-center mt-4 text-sm text-red-500">{message}</p>
         )}
         <p className="text-center mt-4 text-sm">
+          <Link
+            to="#"
+            className="text-[#073B4C] font-medium hover:underline">
+            Forgot Password
+          </Link>
+        </p>
+        <p className="text-center mt-4 text-sm">
           Don’t have an account?{" "}
           <Link
             to="/signup"
-            className="text-[#073B4C] font-medium hover:underline"
-          >
+            className="text-[#073B4C] font-medium hover:underline">
             Sign Up
           </Link>
         </p>
