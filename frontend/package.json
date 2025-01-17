@@ -10,17 +10,26 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource/anton": "^5.1.1",
     "@fortawesome/fontawesome-free": "^6.7.1",
+    "@tabler/icons-react": "^3.28.1",
+    "@tsparticles/engine": "^3.7.1",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.7.1",
     "aos": "^2.3.4",
+    "clsx": "^2.1.1",
     "firebase": "^11.1.0",
-    "framer-motion": "^11.15.0",
+    "framer-motion": "^11.18.0",
     "gsap": "^3.12.5",
+    "icons-react": "^3.7.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-icon": "^1.0.0",
     "react-icons": "^5.4.0",
     "react-router-dom": "^6.28.0",
     "recharts": "^2.15.0",
-    "swiper": "^11.1.12"
+    "swiper": "^11.1.12",
+    "tailwind-merge": "^2.6.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",

@@ -1,16 +1,16 @@
 // App.jsx
-import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Footer from "./components/Footer";
-import LoginPage from "./components/LoginPage";
-import SignUpPage from "./components/SignUpPage";
-import AboutPage from "./components/AboutPage";
-import GetInvolvedPage from "./components/GetInvolvedPage";
-import LandingPage from "./components/LandingPage";
-import Dashboard from "./components/Dashboard";
-import ForgotPassword from "./components/ForgotPassword";
-import HabitTracker from "./components/HabitTracker";
-
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Footer from './components/Footer';
+import LoginPage from './components/LoginPage';
+import SignUpPage from './components/SignUpPage';
+import AboutPage from './components/AboutPage'; 
+import GetInvolvedPage from './components/GetInvolvedPage'; 
+import MainPage from './components/MainPage';
+// import Dashboard from './components/Dashboard';
+import HabitTracker from './components/HabitTracker';
+import LandingPage from './components/LandingPage';
+import Dashboard from './components/Dashboard';
 function App() {
   return (
     <Router>
@@ -20,7 +20,7 @@ function App() {
           path="/"
           element={
             <>
-              <LandingPage />
+          <LandingPage/>
             </>
           }
         />
@@ -54,7 +54,7 @@ function App() {
         <Route path="/signup" element={<SignUpPage />} />
 
         {/* Dashboard Page */}
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/dashboard" element={<MainPage />} />
       </Routes>
     </Router>
   );
