@@ -1,3 +1,4 @@
+/* Import external CSS and fonts */
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
@@ -5,57 +6,43 @@
 @import url("https://fonts.googleapis.com/css2?family=Astraal:wght@400;700&display=swap");
 @import '@fortawesome/fontawesome-free/css/all.css';
 
-/* Import your external CSS and fonts first */
-
-
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Actor&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Astraal:wght@400;700&display=swap");
-@import '@fortawesome/fontawesome-free/css/all.css';
-
+/* Custom font declarations */
 @font-face {
-  font-family: agrandir;
-  src: url(../public/fonts/Agrandir-Regular.otf);
+  font-family: "Agrandir";
+  src: url("../public/fonts/Agrandir-Regular.otf") format("opentype");
+  font-display: swap;
 }
 
 .agrandir {
-  font-family: agrandir;
+  font-family: "Agrandir", sans-serif;
 }
 
 @font-face {
-  font-family: agrandir_bold;
-  src: url(../public/fonts/Agrandir-TextBold.otf);
+  font-family: "Agrandir Bold";
+  src: url("../public/fonts/Agrandir-TextBold.otf") format("opentype");
+  font-display: swap;
 }
 
 .agrandir_bold {
-  font-family: agrandir_bold;
+  font-family: "Agrandir Bold", sans-serif;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Actor&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Astraal:wght@400;700&display=swap");
-@import '@fortawesome/fontawesome-free/css/all.css';
-
-/* Then include the Tailwind directives */
+/* Tailwind directives */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
+/* Smooth scrolling for the webpage */
 html {
   scroll-behavior: smooth;
 }
 
-/* To customize scrollbar (optional) */
+/* Optional: Customize scrollbar */
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
 
 .scrollbar-hide {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
