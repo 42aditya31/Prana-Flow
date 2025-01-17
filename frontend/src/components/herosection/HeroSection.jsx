@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <div>
         <HeroContent/>
-      <BackgroundBeams/>
+      {/* <BackgroundBeams/> */}
     </div>
   )
 }

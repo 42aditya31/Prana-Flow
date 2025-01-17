@@ -41,36 +41,36 @@ const DailyPlanner = () => {
   };
 
   return (
-    <div className="flex flex-col h-screen bg-black text-white mt-8">
+    <div className="flex flex-col h-screen bg-white text-black mt-8">
       {/* Top Section */}
-      <div className="p-10 space-y-8">
-        <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#06d6a0] via-[#ffd166] to-[#118ab2]">
+      <div className="p-10 space-y-8 flex flex-col justify-center items-center">
+        <h1 className="text-5xl text-center font-bold font-poppins text-[#06D6A0]">
           AI-Powered Daily Planner
         </h1>
-        <p className="text-xl text-gray-300">
+        <p className="text-xl text-black text-center font-poppins">
           Describe your ideal day, and let AI craft the perfect plan for you.
         </p>
         <textarea
           value={input}
           onChange={(e) => setInput(e.target.value)}
           placeholder="e.g., I want to focus on studying, have some me-time, and work out..."
-          className="w-full h-48 bg-gray-800 text-gray-300 rounded-lg p-4 text-lg outline-none border border-gray-600 focus:border-[#06d6a0] transition duration-300"
+          className="w-[950px] h-56 bg-gray-800 font-poppins text-gray-300 rounded-lg p-4 text-lg outline-none border border-gray-600 focus:border-[#06d6a0] transition duration-300"
         />
         <button
           onClick={handleGeneratePlan}
-          className="px-6 py-3 bg-[#06d6a0] hover:bg-[#118ab2] text-black font-bold rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out"
+          className="px-6 py-3 bg-[#06d6a0] hover:bg-[#118ab2] text-black font-bold font-poppins rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out"
         >
           Generate My Plan
         </button>
       </div>
 
       {/* Bottom Section */}
-      <div className="p-10 bg-black border-t border-gray-700 space-y-6">
-        <h2 className="text-3xl font-semibold text-center">Pre-Built Prompts</h2>
-        <div className="flex flex-col gap-4">
+      <div className="p-10 bg-[#A0B8BF] border-gray-700 space-y-6">
+        <h2 className="text-3xl font-semibold text-center font-poppins">Pre-Built Prompts</h2>
+        <div className="flex flex-col gap-4 font-poppins">
           <HoverEffect items={prebuiltPrompts} />
         </div>
-        <p className="text-sm text-gray-400 mt-4">
+        <p className="text-sm text-black font-poppins mt-4">
           Tap on a prompt to use it as inspiration for your daily plan.
         </p>
       </div>

@@ -6,14 +6,14 @@ const DailyPlanerContent = () => {
   return (
     <>
       <div className="main mt-16 flex flex-col">
-        <div className="anton ml-12 font-bold text-5xl">Let's</div>
+        <div className="ml-28 font-bold font-poppins text-3xl">LET'S</div>
         <div className="middle">
-          <div className="h-[25rem] flex items-center justify-center">
+          <div className="h-[25rem] mt-[-55px] flex items-center justify-center">
             <TextHoverEffect text="IMPROVE" />
           </div>
         </div>
-        <div className="anton ml-[700px] font-bold text-5xl">
-          Your Daily Planning with the Power of AI
+        <div className="ml-[720px] mt-[-100px] mb-20 font-bold font-poppins text-3xl">
+          YOUR DAILY PLANNING WITH THE POWER OF AI
         </div>
       </div>
       {/* Inline styles or global styles can add the font-family */}

@@ -33,33 +33,33 @@ const HabitRecommendations = () => {
 
   return (
     <>
-      <div className="bg-black mt-[31rem]">
+      <div className="bg-white mt-[31rem]">
         {/* Title Section */}
         <div className="text-center py-12">
-          <h1 className="text-white text-5xl font-medium">
+          <h1 className="text-black text-5xl font-medium font-poppins">
             Predict. Improve. Thrive.
           </h1>
-          <p className="text-white text-xl font-medium mt-4">
+          <p className="text-black text-xl font-medium font-poppins mt-4">
             Let AI decode your routines and guide you toward consistent success—
             one habit at a time.
           </p>
         </div>
 
         {/* Main Content */}
-        <div className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-black text-white px-6">
+        <div className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-white text-black font-poppins px-6">
           {/* Input Section */}
           <motion.div
-            className="w-full md:w-1/2 bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg shadow-xl p-6 mb-8 md:mb-0 md:mr-6"
+            className="w-full md:w-1/2 bg-[#A0B8BF] rounded-lg shadow-xl p-6 mb-8 md:mb-0 md:mr-6"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-3xl font-extrabold mb-6 text-purple-400">
+            <h2 className="text-3xl font-extrabold mb-6 text-[#1F2937]">
               What's Your Goal?
             </h2>
             <PredictSearch />
             <button
-              className="mt-4 w-full bg-purple-600 hover:bg-purple-700 text-white py-2 px-4 rounded-lg transition duration-300 hover:shadow-lg"
+              className="mt-4 w-full bg-[#118AB2] hover:bg-[#1F2937] text-white py-2 px-4 rounded-lg transition duration-300 hover:shadow-lg"
               onClick={() => alert("Prediction logic goes here!")}
             >
               Predict Habits

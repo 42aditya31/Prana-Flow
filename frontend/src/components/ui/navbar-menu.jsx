@@ -17,7 +17,7 @@ export const MenuItem = ({ setActive, active, item, children }) => {
     <div onMouseEnter={() => setActive(item)} className="relative">
       <motion.p
         transition={{ duration: 0.3 }}
-        className="cursor-pointer text-white hover:opacity-[0.9] dark:text-white" // aatla color change thashe
+        className="cursor-pointer text-white hover:opacity-[0.9] dark:text-white" // aatla text color change thashe
       >
         {item}
       </motion.p>
@@ -50,7 +50,7 @@ export const Menu = ({ setActive, children }) => {
   return (
     <nav
       onMouseLeave={() => setActive(null)}                                                                  //aatla navbar nu background change thashe
-      className="relative rounded-full border border-transparent dark:bg-black dark:border-white/[0.2] bg-black shadow-input flex justify-center space-x-4 px-8 py-6"
+      className="relative rounded-full border border-transparent dark:bg-black dark:border-white/[0.2] bg-black shadow flex justify-center space-x-4 px-8 py-6"
     >
       {children}
     </nav>
