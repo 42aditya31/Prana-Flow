@@ -1,12 +1,6 @@
 // App.jsx
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import LandingHeroSection from './components/LandingHeroSection';
-import LandingFeature from './components/LandingFeature';
-import LandingBenefits from './components/LandingBenefits';
-import FeatureBenefits from './components/FeatureBenefits';
-import Testimonial from './components/Testimonial';
-import CallToAction from './components/CallToAction';
 import Footer from './components/Footer';
 import LoginPage from './components/LoginPage';
 import SignUpPage from './components/SignUpPage';
@@ -14,6 +8,8 @@ import AboutPage from './components/AboutPage';
 import GetInvolvedPage from './components/GetInvolvedPage'; 
 // import Dashboard from './components/Dashboard';
 import HabitTracker from './components/HabitTracker';
+import LandingPage from './components/LandingPage';
+import Dashboard from './components/Dashboard';
 function App() {
   return (
     <Router>
@@ -23,12 +19,8 @@ function App() {
           path="/"
           element={
             <>
-              <LandingHeroSection />
-          
-              <FeatureBenefits />
-              <Testimonial />
-              <CallToAction />
-              <Footer />
+            <Dashboard/>
+          <LandingPage/>
             </>
           }
         />
