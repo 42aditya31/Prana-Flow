@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import Dashboard from "./Dashboard";
 
 const LoginPage = () => {
   const [formData, setFormData] = useState({
@@ -94,7 +93,7 @@ const LoginPage = () => {
         )}
         <p className="text-center mt-4 text-sm">
           <Link
-            to="#"
+            to="/forgot-password"
             className="text-[#073B4C] font-medium hover:underline">
             Forgot Password
           </Link>

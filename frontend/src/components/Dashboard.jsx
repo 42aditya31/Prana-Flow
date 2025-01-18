@@ -18,7 +18,7 @@ const Dashboard = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row min-h-screen bg-white">
+    <div  id="dashboard"  className="flex flex-col md:flex-row min-h-screen bg-white">
       {/* Left Panel */}
       <div className="w-full md:w-2/3 p-6 space-y-6">
         <ProfileIntro name={user.name} score={user.score} />

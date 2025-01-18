@@ -7,10 +7,12 @@ import SignUpPage from './components/SignUpPage';
 import AboutPage from './components/AboutPage'; 
 import GetInvolvedPage from './components/GetInvolvedPage'; 
 import MainPage from './components/MainPage';
-// import Dashboard from './components/Dashboard';
 import HabitTracker from './components/HabitTracker';
 import LandingPage from './components/LandingPage';
 import Dashboard from './components/Dashboard';
+
+import ForgotPassword from './components/ForgotPassword';
+
 function App() {
   return (
     <Router>
@@ -20,7 +22,8 @@ function App() {
           path="/"
           element={
             <>
-          <LandingPage/>
+         
+              <LandingPage />
             </>
           }
         />
@@ -53,8 +56,14 @@ function App() {
         {/* Sign Up Page */}
         <Route path="/signup" element={<SignUpPage />} />
 
+        {/* Forgot Password Page */}
+        <Route path="/forgot-password" element={<ForgotPassword />} />
+
         {/* Dashboard Page */}
         <Route path="/dashboard" element={<MainPage />} />
+
+        {/* Profile Page */}
+        <Route path="/profile" element={<Profile />} />
       </Routes>
     </Router>
   );
