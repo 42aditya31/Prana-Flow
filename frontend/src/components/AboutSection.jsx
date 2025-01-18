@@ -9,12 +9,12 @@ import after_img from "../assets/after.jpg"
 const AboutSection = () => {
   return (
     <>
-      <div className="bg-[#A0B8BF]">
+      <div className="bg-[#1F2937]">
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-6xl font-extrabold font-poppins text-center mt-36 pt-10 text-black"
+          className="text-6xl font-extrabold font-poppins text-center mt-36 pt-10 text-[#FFD166]"
         >
           Our Purpose
         </motion.h1>
@@ -27,7 +27,7 @@ const AboutSection = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="text-2xl font-medium font-poppins text-center text-[#073B4C] max-w-4xl leading-relaxed"
+                className="text-2xl font-medium font-poppins text-center text-white max-w-4xl leading-relaxed"
               >
                 Fusing AI precision with the wisdom of ancient India, we make
                 self-improvement smarter, simpler, and soulful.
@@ -41,7 +41,7 @@ const AboutSection = () => {
                 className="flex flex-col space-y-12 w-full max-w-5xl"
               >
                 {/* "Why Us?" Section */}
-                <div className="bg-[#073b4c] p-8 rounded-lg shadow-lg border border-gray-800">
+                <div className="bg-[#118AB2] p-8 rounded-lg shadow-lg border border-gray-800">
                   <h3 className="text-3xl font-semibold font-poppins bg-clip-text text-transparent bg-gradient-to-r from-[#ffd166] to-[#06d6a0] mb-6">
                     Why Us?
                   </h3>
@@ -61,7 +61,7 @@ const AboutSection = () => {
                       </span>
                     </li>
                     <li className="flex items-start">
-                      <span className="w-4 h-4 bg-[#118ab2] rounded-full mr-4"></span>
+                      <span className="w-4 h-4 bg-[#EF476F] rounded-full mr-4"></span>
                       <span className="text-lg text-gray-300">
                         <span className="font-semibold font-poppins text-white">Holistic Growth: </span>
                         Balance mind, body, and habits—effortlessly.

@@ -4,13 +4,13 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 const FooterMain = () => {
   return (
-    <footer className="bg-black text-white py-12">
+    <footer className="bg-[#1F2937] text-white py-12 m-5 rounded-2xl">
       <div className="container mx-auto px-4">
         {/* Main Footer Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
           {/* Branding */}
           <div className="col-span-1">
-            <h1 className="text-3xl font-bold mb-4">PredictPro</h1>
+            <h1 className="text-3xl font-bold mb-4">Prana Flow</h1>
             <p className="text-gray-400">
               Empowering you to achieve your goals with personalized habit recommendations. Think smarter, live better.
             </p>

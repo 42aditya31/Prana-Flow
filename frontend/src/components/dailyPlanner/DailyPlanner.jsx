@@ -65,12 +65,12 @@ const DailyPlanner = () => {
       </div>
 
       {/* Bottom Section */}
-      <div className="p-10 bg-[#A0B8BF] border-gray-700 space-y-6">
-        <h2 className="text-3xl font-semibold text-center font-poppins">Pre-Built Prompts</h2>
+      <div className="p-10 bg-[#1F2937] border-gray-700 space-y-6">
+        <h2 className="text-5xl font-semibold text-center text-white font-poppins">Pre-Built Prompts</h2>
         <div className="flex flex-col gap-4 font-poppins">
           <HoverEffect items={prebuiltPrompts} />
         </div>
-        <p className="text-sm text-black font-poppins mt-4">
+        <p className="text-sm text-white font-poppins mt-4">
           Tap on a prompt to use it as inspiration for your daily plan.
         </p>
       </div>
