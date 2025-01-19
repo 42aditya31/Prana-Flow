@@ -8,12 +8,15 @@ import Testimonial from "./Testimonial";
 import TesimonialMain from "./TesimonialMain";
 import FooterMain from "./FooterMain";
 import NavMenu from "./NavMenu";
-
+import HeroSection2 from "./herosection/HeroSection2";
+import NavBar2 from "./NavBar2";
 const MainPage = () => {
   return (
     <div>
       <NavMenu/>
-      <HeroSection />
+      {/* <NavBar2 /> */}
+      {/* <HeroSection /> */}
+      <HeroSection2 />
       <AboutSection />
       <DailyPlannerFeature />
       <HabitRecommendations />

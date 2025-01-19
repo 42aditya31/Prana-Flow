@@ -10,15 +10,15 @@ const Streaks = () => {
   };
 
   return (
-    <div className="bg-white py-6 px-4 rounded-lg grid grid-cols-2 sm:grid-cols-4 gap-4">
+    <div className="py-6 px-4 rounded-lg grid grid-cols-2 sm:grid-cols-4 gap-4">
       {/* Current Streak */}
-      <div className="streak-card">
+      <div className="streak-card bg-[#118AB2] p-10 text-white rounded-2xl">
         <h2 className="text-3xl font-bold">{streaks.currentStreak}</h2>
         <p className="text-sm font-medium mt-2">Current Streak</p>
       </div>
 
       {/* Habits */}
-      <div className="streak-card">
+      <div className="streak-card bg-[#118AB2] p-10 text-white rounded-2xl">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -38,7 +38,7 @@ const Streaks = () => {
       </div>
 
       {/* Meditation Minutes */}
-      <div className="streak-card">
+      <div className="streak-card bg-[#118AB2] p-10 text-white rounded-2xl">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -58,7 +58,7 @@ const Streaks = () => {
       </div>
 
       {/* Longest Streak */}
-      <div className="streak-card">
+      <div className="streak-card bg-[#118AB2] p-10 text-white rounded-2xl">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"

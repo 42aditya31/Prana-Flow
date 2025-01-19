@@ -13,14 +13,14 @@ const data = [
         </p>
         <div className="grid grid-cols-2 gap-4">
           <img
-            src="/images/goals-1.webp"
+            src="https://files.realpython.com/media/Interfaces-in-Python_Watermarked.f9ce5bda238c.jpg"
             alt="Input goals interface"
             width={500}
             height={500}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-md"
           />
           <img
-            src="/images/goals-2.webp"
+            src="https://img.freepik.com/free-vector/hand-drawn-flat-our-mission-concept_23-2149065168.jpg?t=st=1737316110~exp=1737319710~hmac=21129016cdb046a6057c974ba2649a935ac47b2533261684b292c8d1a9bc009d&w=740"
             alt="Personalized goals"
             width={500}
             height={500}
@@ -39,14 +39,14 @@ const data = [
         </p>
         <div className="grid grid-cols-2 gap-4">
           <img
-            src="/images/analyze-1.webp"
+            src="https://img.freepik.com/free-vector/business-analytics-concept-illustration_114360-3268.jpg?semt=ais_hybrid"
             alt="Behavior analysis"
             width={500}
             height={500}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-md"
           />
           <img
-            src="/images/analyze-2.webp"
+            src="https://i.pinimg.com/736x/d6/84/df/d684dfce7e3fb35dc0f120a54dda2348.jpg"
             alt="Pattern detection"
             width={500}
             height={500}
@@ -65,14 +65,14 @@ const data = [
         </p>
         <div className="grid grid-cols-2 gap-4">
           <img
-            src="/images/predictions-1.webp"
+            src="https://i.pinimg.com/736x/f5/58/57/f5585730123539427d59de2f83013fee.jpg"
             alt="AI predictions"
             width={500}
             height={500}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-md"
           />
           <img
-            src="/images/predictions-2.webp"
+            src="https://img.freepik.com/free-vector/digital-guide-abstract-illustration_335657-5067.jpg?t=st=1737316440~exp=1737320040~hmac=3b791065bd552642f9d92282212386404e827a4bd8df742c0474e855a35b6552&w=740"
             alt="Tailored suggestions"
             width={500}
             height={500}
@@ -91,14 +91,14 @@ const data = [
         </p>
         <div className="grid grid-cols-2 gap-4">
           <img
-            src="/images/consistency-1.webp"
+            src="https://img.freepik.com/free-vector/timeline-concept-illustration_114360-5230.jpg?t=st=1737316538~exp=1737320138~hmac=c0af49549e0a6af327f8972284f348d504859472f039991d0bca1e928b6d3e15&w=740"
             alt="Consistency tracker"
             width={500}
             height={500}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-md"
           />
           <img
-            src="/images/consistency-2.webp"
+            src="https://i.pinimg.com/736x/5f/ab/40/5fab40b00047e900575532cb0a1a305e.jpg"
             alt="Habit streaks"
             width={500}
             height={500}
@@ -117,14 +117,14 @@ const data = [
         </p>
         <div className="grid grid-cols-2 gap-4">
           <img
-            src="/images/reflect-1.webp"
+            src="https://img.freepik.com/free-vector/augmented-reality-background-isometric-style_23-2147802730.jpg?semt=ais_hybrid"
             alt="Reflection process"
             width={500}
             height={500}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-md"
           />
           <img
-            src="/images/reflect-2.webp"
+            src="https://img.freepik.com/premium-photo/business-man-pointing-development-arrow-graph-business-development-success_117255-1501.jpg?w=740"
             alt="Growth refinement"
             width={500}
             height={500}

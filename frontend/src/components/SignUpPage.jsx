@@ -40,7 +40,7 @@ const SignUpPage = () => {
           navigate("/login")
         }, 1000);
       } else {
-        setMessage(data.error || "Something went wrong!");
+        setMessage(data.error || "Email-Id already Exist!");
       }
     } catch (err) {
       console.error("Error during signup: ", err)
@@ -107,7 +107,7 @@ const SignUpPage = () => {
         </form>
         {/* Show success/error messages */}
         {message && (
-          <p className="text-center mt-4 text-sm text-red-500">{message}</p>
+          <p className="text-center mt-4 text-sm text-gray-500">{message}</p>
         )}
         <p className="text-center mt-4 text-sm">
           Already have an account?{" "}

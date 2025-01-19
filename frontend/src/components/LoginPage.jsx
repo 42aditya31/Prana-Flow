@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import Dashboard from "./Dashboard";
 
 const LoginPage = () => {
   const [formData, setFormData] = useState({
@@ -35,7 +34,7 @@ const LoginPage = () => {
         setMessage("Login successful!");
         // Redirect to another page or perform other actions here
         setTimeout(() => {
-          navigate("/dashboard"); // Redirect to the dashboard page
+          navigate("/mainpage"); // Redirect to the dashboard page
         }, 1000); // Delay for user feedback
       } else {
         setMessage(data.error || "Something went wrong!");
@@ -90,11 +89,11 @@ const LoginPage = () => {
         </form>
         {/* Show success/error messages */}
         {message && (
-          <p className="text-center mt-4 text-sm text-red-500">{message}</p>
+          <p className="text-center mt-4 text-sm text-gray-500">{message}</p>
         )}
         <p className="text-center mt-4 text-sm">
           <Link
-            to="#"
+            to="/forgot-password"
             className="text-[#073B4C] font-medium hover:underline">
             Forgot Password
           </Link>
@@ -113,3 +112,4 @@ const LoginPage = () => {
 };
 
 export default LoginPage;
+

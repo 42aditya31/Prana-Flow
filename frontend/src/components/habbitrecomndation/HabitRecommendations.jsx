@@ -32,10 +32,10 @@ const HabitRecommendations = () => {
 
   return (
     <>
-      <div className="bg-white mt-[31rem]">
+      <div className="bg-white mt-44">
         {/* Title Section */}
-        <div className="text-center py-12">
-          <h1 className="text-black text-6xl pt-16 font-medium font-poppins">
+        <div className="text-center py-4">
+          <h1 className="text-black text-6xl pt-3 font-medium font-poppins">
             Predict. Improve. Thrive.
           </h1>
           <p className="text-black text-xl font-medium font-poppins mt-4">

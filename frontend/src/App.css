@@ -41,3 +41,12 @@
   color: #888;
 }
 
+@keyframes slide-in {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+

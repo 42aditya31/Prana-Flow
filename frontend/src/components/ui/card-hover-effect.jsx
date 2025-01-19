@@ -4,7 +4,8 @@ import { useState } from "react";
 
 export const HoverEffect = ({
   items,
-  className
+  className,
+  onCardClick,
 }) => {
   let [hoveredIndex, setHoveredIndex] = useState(null);
 
@@ -17,6 +18,7 @@ export const HoverEffect = ({
           className="relative group block p-2 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
+          onClick={() => onCardClick(item?.title)} 
         >
           <AnimatePresence>
             {hoveredIndex === idx && (
@@ -36,8 +38,8 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
           <Card>
-            <CardTitle>{item.title}</CardTitle>
-            <CardDescription>{item.description}</CardDescription>
+            <CardTitle className={'cursor-pointer'}>{item.title}</CardTitle>
+            <CardDescription className={'cursor-pointer'}>{item.description}</CardDescription>
           </Card>
         </a>
       ))}
