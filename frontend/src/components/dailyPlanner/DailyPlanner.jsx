@@ -34,46 +34,48 @@ const DailyPlanner = () => {
   };
 
   const handleGeneratePlan = async () => {
-    if (!input.trim()) return; // Prevent empty inputs
+  if (!input.trim()) return; // Prevent empty inputs
 
-    // Add user's message
-    setMessages((prev) => [...prev, { sender: "user", text: input }]);
+  // Add user's message
+  setMessages((prev) => [...prev, { sender: "user", text: input }]);
 
-    // Show loading animation
-    setIsLoading(true);
+  // Show loading animation
+  setIsLoading(true);
 
-    try {
-      const genAI = new GoogleGenerativeAI("AIzaSyAPZFKpq30_ng_jCXq9HyRP_g--LMct-QQ");
-      const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
-      // const myinput = `you have to generate a daily plan with task and time {$task1} at {$time}`
-      const result = await model.generateContent(input);
-      const output = await result.response.text();
+  try {
+    const genAI = new GoogleGenerativeAI("AIzaSyAPZFKpq30_ng_jCXq9HyRP_g--LMct-QQ");
+    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+    const result = await model.generateContent(input);
+    const output = await result.response.text();
 
-      // Add AI response, preserving markdown-like formatting
-      setMessages((prev) => [...prev, { sender: "ai", text: output }]);
+    // Add AI response, preserving markdown-like formatting
+    setMessages((prev) => [...prev, { sender: "ai", text: output }]);
 
-      // Parse AI output into schedule data
-      const parsedData = parseAIOutput(output);
+    // Parse AI output into schedule data
+    const parsedData = parseAIOutput(output);
 
+    // Wait for the result to render before showing the alert box
+    setTimeout(() => {
       const confirmSchedule = window.confirm("Do you want to schedule this plan?");
       if (confirmSchedule) {
         addToSchedule(parsedData); // Sync with the schedule
       }
+    }, 4000); // Ensure this runs after the current render cycle
+  } catch (error) {
+    console.error("Error generating plan:", error);
+    setMessages((prev) => [
+      ...prev,
+      { sender: "ai", text: "An error occurred while generating the plan." },
+    ]);
+  } finally {
+    // Stop loading animation
+    setIsLoading(false);
+  }
 
-    } catch (error) {
-      console.error("Error generating plan:", error);
-      setMessages((prev) => [
-        ...prev,
-        { sender: "ai", text: "An error occurred while generating the plan." },
-      ]);
-    } finally {
-      // Stop loading animation
-      setIsLoading(false);
-    }
+  // Clear input field
+  setInput("");
+};
 
-    // Clear input field
-    setInput("");
-  };
 
   const handleCardClick = (title) => {
     if (!title) {

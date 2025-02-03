@@ -51,10 +51,10 @@ const SignUpPage = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-[#073B4C] text-[#FFD166] font-poppins">
       <div className="bg-[#FFFFFF] text-[#073B4C] p-8 rounded-lg shadow-lg w-full max-w-md">
-        <h2 className="text-2xl font-bebas mb-6 text-center">Sign Up</h2>
+        <h2 className="text-2xl font-poppins font-bold mb-6 text-center">SIGN UP</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
-            <label htmlFor="name" className="block mb-2 text-sm font-medium">
+            <label htmlFor="name" className="block mb-2 text-sm font-medium font-poppins">
               Full Name
             </label>
             <input
@@ -64,12 +64,12 @@ const SignUpPage = () => {
               placeholder="Enter your full name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-[#FFD166]"
+              className="w-full px-4 py-2 font-poppins border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-[#FFD166]"
               required
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="email" className="block mb-2 text-sm font-medium">
+            <label htmlFor="email" className="block mb-2 text-sm font-medium font-poppins">
               Email Address
             </label>
             <input
@@ -79,12 +79,12 @@ const SignUpPage = () => {
               placeholder="Enter your email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-[#FFD166]"
+              className="w-full px-4 py-2 font-poppins border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-[#FFD166]"
               required
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="password" className="block mb-2 text-sm font-medium">
+            <label htmlFor="password" className="block mb-2 text-sm font-medium font-poppins">
               Password
             </label>
             <input
@@ -94,24 +94,24 @@ const SignUpPage = () => {
               placeholder="Enter your password"
               value={formData.password}
               onChange={handleChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-[#FFD166]"
+              className="w-full px-4 py-2 font-poppins border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-[#FFD166]"
               required
             />
           </div>
           <button
             type="submit"
-            className="w-full bg-[#073B4C] text-[#FFD166] py-2 rounded-lg hover:bg-[#FFD166] hover:text-[#073B4C] transition duration-300"
+            className="w-full font-poppins bg-[#073B4C] text-[#FFD166] py-2 rounded-lg hover:bg-[#FFD166] hover:text-[#073B4C] transition duration-300"
           >
             Sign Up
           </button>
         </form>
         {/* Show success/error messages */}
         {message && (
-          <p className="text-center mt-4 text-sm text-gray-500">{message}</p>
+          <p className="text-center font-poppins mt-4 text-sm text-gray-500">{message}</p>
         )}
-        <p className="text-center mt-4 text-sm">
+        <p className="text-center mt-4 text-sm font-poppins">
           Already have an account?{" "}
-          <Link to="/login" className="text-[#073B4C] font-medium hover:underline">
+          <Link to="/login" className="text-[#073B4C] font-poppins font-medium hover:underline">
             Log In
           </Link>
         </p>

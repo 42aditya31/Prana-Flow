@@ -36,15 +36,15 @@ const HeroSection2 = () => {
                                 className="bg-[#06D6A0] hover:bg-[#073B4C] hover:text-white rounded-md duration-200 font-semibold py-2 px-4 text-xl shadow-lg"
                                 type="button"
                             >
-                                <Link to="/signup">Get Started</Link>
+                                <Link to="/blog">Explore</Link>
                             </button>
                             {/* Learn More Button */}
-                            <button
+                            {/* <button
                                 className="bg-[#06D6A0] hover:bg-[#073B4C] hover:text-white duration-200 font-semibold rounded-md py-2 px-4 text-xl"
                                 type="button"
                             >
                                 <Link to="/login">Login</Link>
-                            </button>
+                            </button> */}
                         </div>
                     </div>
 

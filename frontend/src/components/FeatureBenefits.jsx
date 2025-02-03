@@ -25,7 +25,7 @@ const FeatureBenefits = () => {
     },
     {
       id: 3,
-      image: "https://via.placeholder.com/300",
+      image: "https://img.freepik.com/free-vector/board-games-abstract-concept-vector-illustration-tabletop-activities-strategic-gaming-stay-home-gamers-social-isolation-free-time-spending-family-fun-activity-idea-abstract-metaphor_335657-6228.jpg?t=st=1737344976~exp=1737348576~hmac=d05d428605d39cf709f542da98bc6b5ccff7d2767b46eef2d4d76f50e3150606&w=740",
       head: "   Gamified Progress Tracking ",
       p: "  Boost your engagement with habit streaks, levels, and rewards. Our gamification tools turn your journey into a fun, fulfilling experience.",
     },
