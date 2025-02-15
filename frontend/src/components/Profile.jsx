@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import NavBar from "./NavMenu"
 import Footer from "./FooterMain"
 import profileImage from "../assets/profile.png"
